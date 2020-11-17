@@ -1,2 +1,2 @@
 # CSSProperties
-Exercises in CSS
+Exercises in CSS and JavaScript
