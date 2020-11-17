@@ -1,0 +1,218 @@
+html {
+	font-size: 8px; /*parent font-size of the divs using rems*/
+}
+
+body {
+	background-color: #203e75;
+	/*margin: 0;*/
+}
+
+#container {
+	font-size: 16px; /*parent font-size of the divs using ems*/
+	padding: 0px 15px;
+	height: 600px;
+}
+
+.maintitle {
+	padding: 0 15px;
+	height: 25%; /*1/4 height of #container*/ 
+}
+
+/*Initiate the transition + property type in the element 
+and then in :hover make the value change*/
+.divmain {
+	padding: 0 15px;
+	height: 100%; /*100% height of .maintitle*/
+	transition: background-color 1s;
+}
+.divmain:hover {
+	background-color: rgba(255,255,255, 0.05);
+}
+/*.divmain:after{
+	background-color: rgba(255,255,255, 0);
+}*/
+
+
+
+#trans{
+	margin: 0;
+	height: 100%; /*100% height of the div.main*/
+	text-align: center; 
+	font-size: 50px;
+	
+	opacity: 0;
+	color: transparent;
+	
+	/*transition: opacity 3s;
+	transition: color 3s; */
+
+	/*Set the properties to execute transition, instead of all properties*/
+	transition: opacity 3s, color 3s;
+}
+
+#trans:hover {
+	opacity: 1;
+	color: white;
+}
+
+
+/*Outside .maintitle*/
+.speakers {
+	padding: 0 15px;
+	height: 50%; /*50% height of .container*/
+}
+
+
+
+.div000 {
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	padding: 0 15px; 
+	width: 500px; 
+	height: 150px;
+	
+	/*display: inline-block;*/
+	
+	background-color: #699dff;
+	border-left: 2px solid #ffffff;
+}
+.div000 h1 {
+	font-size: 2em; 
+	padding: 20px;		
+}
+
+
+.div001 {
+	padding: 0 1em; 
+	width: 200px; 
+	height: 300px;
+	display: inline-block;
+	background-color: #203e75;
+	border-left: 2px solid #4d8bff; 
+}
+.div001 h1 {
+	font-size: 2em;
+	padding: 20px;
+}
+.div001 h2 {
+	font-size: 1.6em;
+	padding: 20px;
+}
+.div001 h3 {
+	font-size: 1em;
+	padding: 20px;
+}
+
+
+.div010 {
+	padding: 0 1em; 
+	width: 200px; 
+	height: 300px;
+	display: inline-block;
+	background-color: #203e75;
+	border-left: 2px solid #4d8bff; 
+}
+.div010 h1 {
+	font-size: 2em;
+	padding: 20px;
+}
+.div010 h2 {	
+	font-size: 1.6em;
+	padding: 20px;
+}
+.div010 h3 {
+	font-size: 1em;
+	padding: 20px;
+}
+
+
+/*Position property*/
+/*Descendent selector can be used with id and class and with # # (id id) pattern of selection*/
+#container .div010 {
+	position: relative; /* static doesn't allow top bottom right left*/
+	left: 10em;
+	transition: background-color 1s;
+}
+
+/*Opacity set only to the property background-color bya alpha channel*/
+/*Opacity property sets opacity for the entire element and its content*/
+/*Hexadecimals can be used with an alpha channel as well (8 digits total)*/
+.div010:hover {
+	background-color: rgba(255,255,255, 0.05);
+	/*opacity: 0.5;*/
+}
+
+#container .div001 {
+	transition: background-color 1s;
+}
+.div001:hover {
+	background-color: rgba(255,255,255, 0.05);
+}
+
+
+
+/*Select every span within the main div, this could be also do in sections*/
+main:first-of-type span:nth-of-type(2n+1) {
+	background-color: #F72585;
+}
+
+/*Pseudo class nth-of-type to select group of li( and its content) nested in articles*/
+.nth:nth-of-type(2n+1) {
+	background-color: #699dff;
+	width: 300px
+
+}
+
+/*Select specific class nested inside an article*/
+#rems010 .purp:nth-of-type(1){
+	background-color: #7209b7;
+}
+
+
+
+/*The translate property in the transform function affect all the nested elements in the ul*/
+#rems001 ul {
+	font-size: 2rem;
+	transform: translateX(10rem); /*it seems that translate acts like a relative position element?*/
+}
+
+#rems010 ul {
+	font-size: 4rem;
+}
+
+#rems011 ul {
+	font-size: 2rem;
+	transform: translateX(10rem); 
+}
+
+
+#rems100 ul {
+	font-size: 4rem;
+}
+
+#rems101 ul {
+	font-size: 2rem;
+	transform: translateX(10rem); /*it seems that translate acts like a relative position element?*/
+}
+
+#rems110 ul {
+	font-size: 4rem;
+}
+
+
+
+
+#timing div{
+	height: 100px;
+	width: 100px;
+	background-color: #699dff;
+	margin: 30px 0;
+	transition: margin-left 3s; 
+}
+
+#timing:hover div{
+	margin-left: 500px;
+}
+
+
