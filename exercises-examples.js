@@ -20,6 +20,14 @@ var realNumber = 13;
 realNumber + 12
 25
 
+El lenguaje de programacion tiene una cantidad de operaciones que sabe hacer
+Presedencia de Signos (concepto matematico)
+2*4 + 3*(1+2)
+17
+2*4 + 3*3
+8 + 9 
+17
+
 const variable: la variable no puede ser pisada, variable constante
 const PI = 3.1416
 PI + realNumber
@@ -34,6 +42,9 @@ firstName: se accede a lo que esta adentro de la variable por medio de ese nombr
 value: representacion de cosas
 
 Tipo de Dato: que tipo de cosas de guarda en var variable
-String: hilo de letras y o numeros
+String: hilo de letras y o numeros que se escriben entre comillas
+
+
+
 
 
