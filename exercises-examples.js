@@ -41,7 +41,7 @@ firstName: se accede a lo que esta adentro de la variable por medio de ese nombr
 
 value: representacion de cosas
 
-Tipo de Dato: que tipo de cosas de guarda en var variable
+Tipo de Dato: que tipo de cosas que se guarda en var variable
 
 String: hilo de letras y o numeros que se escriben entre comillas
 Numbers: var num, var real, var neg

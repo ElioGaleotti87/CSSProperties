@@ -164,7 +164,7 @@ main:first-of-type span:nth-of-type(2n+1) {
 
 }
 
-/*Select specific class nested inside an article*/
+/*Select specific class nested inside an article and add a purple background color*/
 #rems010 .purp:nth-of-type(1){
 	background-color: #7209b7;
 }
