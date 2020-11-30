@@ -174,16 +174,18 @@ main:first-of-type span:nth-of-type(2n+1) {
 /*The translate property in the transform function affect all the nested elements in the ul*/
 #rems001 ul {
 	font-size: 2rem;
-	transform: translateX(10rem); /*it seems that translate acts like a relative position element?*/
+	/*transform: translateX(10rem); it seems that translate acts like a relative position element?*/
+	padding-left:80px;
 }
 
 #rems010 ul {
 	font-size: 4rem;
+	padding-left: 30px;
 }
 
 #rems011 ul {
 	font-size: 2rem;
-	transform: translateX(10rem); 
+	/*transform: translateX(10rem); */
 }
 
 
@@ -193,7 +195,7 @@ main:first-of-type span:nth-of-type(2n+1) {
 
 #rems101 ul {
 	font-size: 2rem;
-	transform: translateX(10rem); /*it seems that translate acts like a relative position element?*/
+	/*transform: translateX(10rem); it seems that translate acts like a relative position element?*/
 }
 
 #rems110 ul {
@@ -202,7 +204,7 @@ main:first-of-type span:nth-of-type(2n+1) {
 
 
 
-
+/*Animation*/
 #timing div{
 	height: 100px;
 	width: 100px;
